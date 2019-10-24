@@ -1,60 +1,58 @@
-body{
-    height: 100%;
-    background-image: linear-gradient(#137dd4,#9ec3d9,#f7fcff);
-    background-size: cover;
-    position: relative;
-    
+
+
+.login-clean {
+  padding: 80px 0;
 }
 
-
-.login-dark form {
+.login-clean form {
   max-width: 320px;
   width: 90%;
-  background-color: #1e2833;
+  margin: 0 auto;
+  background-color: #ffffff;
   padding: 40px;
   border-radius: 4px;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: #fff;
-  box-shadow: 3px 3px 4px rgba(0,0,0,0.2);
+  color: #505e6c;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
 }
 
-.login-dark .illustration {
+.login-clean .illustration {
   text-align: center;
-  padding: 15px 0 20px;
-  font-size: 100px;
-  color: #2980ef;
+  font-size: 40px;
+  color: #137dd4;
 }
 
-.login-dark form .form-control {
-  background: none;
+.login-clean form .form-control {
+  background: #f7f9fc;
   border: none;
-  border-bottom: 1px solid #434a52;
+  border-bottom: 1px solid #dfe7f1;
   border-radius: 0;
   box-shadow: none;
   outline: none;
   color: inherit;
+  text-indent: 8px;
+  height: 42px;
 }
 
-.login-dark form .btn-primary {
-  background: #214a80;
+.login-clean form .btn-primary {
+  background: #137dd4;
   border: none;
   border-radius: 4px;
   padding: 11px;
   box-shadow: none;
   margin-top: 26px;
   text-shadow: none;
-  outline: none;
+  outline: none !important;
 }
 
-.login-dark form .btn-primary:hover, .login-dark form .btn-primary:active {
-  background: #214a80;
-  outline: none;
+.login-clean form .btn-primary:hover, .login-clean form .btn-primary:active {
+  background: #266ba3;
 }
 
-.login-dark form .forgot {
+.login-clean form .btn-primary:active {
+  transform: translateY(1px);
+}
+
+.login-clean form .forgot {
   display: block;
   text-align: center;
   font-size: 12px;
@@ -63,12 +61,8 @@ body{
   text-decoration: none;
 }
 
-.login-dark form .forgot:hover, .login-dark form .forgot:active {
+.login-clean form .forgot:hover, .login-clean form .forgot:active {
   opacity: 1;
   text-decoration: none;
-}
-
-.login-dark form .btn-primary:active {
-  transform: translateY(1px);
 }
 
