@@ -1,5 +1,6 @@
 <?php
 //Indeholder informationer til database, der gør at hjemmeside kan få forbindelse til den
+
 //require_once('../config.php');
 
    $db = mysqli_connect(db_server,db_username,db_password,db_database);

@@ -1,18 +1,15 @@
 <?php 
 //Include DB_CON osv...
+
+//If no login, get OUT!
 ?>
 <html>
 
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Fontawesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <!-- CSS -->
-    <link rel="stylesheet" href="libs/css/main.css">
-    <link rel="stylesheet" href="libs/css/footer.css">
-    <link rel="stylesheet" href="libs/css/navbar.css">
+
+    <?php require_once("includes/include_css.html");?>
+    <!-- This page's CSS -->
     <link rel="stylesheet" href="libs/css/page.css">
 
     <!-- Icon - #Note: Change to a proper icon -->
@@ -21,7 +18,7 @@
     <title>Midtfyns Privatskole - Netcheck</title>
 </head>
 <header>
-    <?php include_once("includes/navbar.php");?>
+    <?php require_once("includes/navbar.php");?>
 </header>
 
 <body>
@@ -39,37 +36,43 @@
                         <ul class="nav">
                             <li>
                                 <a href="#">
-                                    <i class="zmdi zmdi-view-dashboard"></i> Dashboard
+                                <i class="fab fa-dashcube"></i> Dashboard
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="zmdi zmdi-link"></i> Shortcuts
+                                <i class="fas fa-id-card"></i> Profil
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="zmdi zmdi-widgets"></i> Overview
+                                    <i class="fas fa-book"></i> Lektier
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="zmdi zmdi-calendar"></i> Events
+                                <i class="far fa-calendar-alt"></i> Kalender
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="zmdi zmdi-info-outline"></i> About
+                                <i class="fas fa-clock"></i> Skema
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="zmdi zmdi-settings"></i> Services
+                                <i class="fas fa-envelope"></i> Kontakt
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="zmdi zmdi-comment-more"></i> Contact
+                                <i class="fas fa-info"></i> Om os
+                                </a>
+                            </li>
+                            <!-- For admins -->
+                            <li>
+                                <a href="#">
+                                <i class="fas fa-user-plus"></i> Opret
                                 </a>
                             </li>
                         </ul>
@@ -78,8 +81,30 @@
             </div>
             <!-- Main -->
             <div class="col-md-8">
-
+            <div class="row">
+            <div class="col-md-8 mb-5">
+                <h2 id="aboutus">What We Do</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi
+                    soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam.
+                    Repellat explicabo, maiores!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur
+                    magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt
+                    voluptate. Voluptatum.</p>
             </div>
+
+            <div class="col-md-8 mb-5">
+                <h2>Our history</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi
+                    soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam.
+                    Repellat explicabo, maiores!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur
+                    magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt
+                    voluptate. Voluptatum.</p>
+            </div>
+            </div>
+        </div>
 
         </div>
     </div>
