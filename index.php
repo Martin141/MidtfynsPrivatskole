@@ -1,5 +1,5 @@
 <?php 
-//Include DB_CON osv...
+require_once("db_con.php");
 ?>
 <html>
 
@@ -32,7 +32,7 @@
                 <div class="form-group"><i class="fas fa-user"></i><input class="form-control" type="username" name="username" placeholder="Brugernavn" />
                 </div>
                 <div class="form-group"><i class="fas fa-key"></i><input class="form-control" type="password" name="password"
-                        placeholder="Password" /></div>
+                        placeholder="Kodeord" /></div>
                 <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log Ind</button></div><a
                     class="forgot" href="#">Glemt din kode? Klik her</a>
             </form>
