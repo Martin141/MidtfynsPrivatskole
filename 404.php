@@ -32,7 +32,7 @@
         <div class="krabbe">
 <h1 id="spinner"><strong  style="color: red">WEBSITE IS GONE</strong><p><br>
 <h1 id="spinner" style="color: red">TRY AGAIN</p>
-<h1 id="spinner"><a href="index" style="color: red">God hjemmeside</p>
+<h1 id="spinner"><a href="index.php" style="color: red">God hjemmeside</p>
 <iframe width="50%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/496879410&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 </div>
 </html>
