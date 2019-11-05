@@ -1,10 +1,17 @@
+<?php 
+//Only logged in users can use this
+?>
 <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+<<<<<<< HEAD
+    <a class="navbar-brand" href="index.php">
+=======
     <a class="navbar-brand" href="index">
+>>>>>>> 84b3a69f2972ea9c44d86c3b8a3706018f1dcac4
         <img src="libs/img/aulo-icon.png" alt="AULO">
     </a>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">

@@ -41,12 +41,15 @@
                     <!-- Demo content-->
                     <div class="container">
                         <div class="row">
+<<<<<<< HEAD
                             <!-- Tab links -->
                             <div class="tab" class="text-left">
                                 <button class="tablinks" onclick="changeTab(event, 'Aulo')"
                                     id="defaultOpen">Skolelogin</button>
                                 <button class="tablinks" onclick="changeTab(event, 'Parent')">Forældrelogin</button>
                             </div>
+=======
+>>>>>>> f4cd0b07179b29912a7f47232f1080fefd1aa0a1
                             <div class="col-lg-10 col-xl-7 mx-auto">
 
                                 <!-- Aulo login -->
@@ -83,6 +86,7 @@
                             <!-- /Aulo login -->
 
                             <!-- Parent login -->
+<<<<<<< HEAD
                             <div class="col-lg-10 col-xl-7 mx-auto">
                                 <div id="Parent" class="tabcontent">
                                     <div class="blue-icon text-center">
@@ -119,6 +123,44 @@
                         <!-- /Parent login -->
                     </div>
 
+=======
+                        <div class="col-lg-10 col-xl-7 mx-auto">
+                            <div id="Parent" class="tabcontent">
+                                <div class="blue-icon text-center">
+                                    <h3><i class="fas fa-crow"></i>Forældre login + AULO</h3>
+                                </div>
+                                <form action="auth.php" method="post-parent">
+                                    <div class="form-group mb-3">
+                                        <div class="blue-icon"> <i class="fas fa-user-lock"></i> <input id="inputEmail"
+                                                type="username" name="username" placeholder="Brugernavn" required=""
+                                                autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <div class="blue-icon"> <i class="fas fa-key"></i></i><input id="inputPassword"
+                                                type="password" name="password" placeholder="Kodeord" required=""
+                                                class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                                        </div>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input id="customCheck1" type="checkbox" checked class="custom-control-input">
+                                        <label for="customCheck1" class="custom-control-label">Husk kode</label>
+                                    </div>
+                                    <button type="submit"
+                                        class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">Log
+                                        ind</button>
+                                </form>
+                            </div>
+                        </div>
+                        </div>
+                                                <!-- Tab links -->
+                                                <div class="tab" class="text-left">
+                            <button class="tablinks" onclick="changeTab(event, 'Aulo')"id="defaultOpen">Skolelogin</button>
+                            <button class="tablinks" onclick="changeTab(event, 'Parent')">Forældrelogin</button>
+                        </div>
+                        <!-- /Parent login -->
+                    </div>
+>>>>>>> f4cd0b07179b29912a7f47232f1080fefd1aa0a1
                 </div><!-- End -->
 
             </div>

@@ -100,7 +100,10 @@
         text-indent: 7px;
         margin-right: 10px;
         color: #fff;
+<<<<<<< HEAD
+=======
         float: left;
+>>>>>>> 84b3a69f2972ea9c44d86c3b8a3706018f1dcac4
     }
     
     #sidebar-wrapper .sidebar-nav li a .caret {
