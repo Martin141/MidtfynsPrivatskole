@@ -1,9 +1,10 @@
 <?php
 //Indeholder informationer til database, der gør at hjemmeside kan få forbindelse til den
 
-require_once('../config.php');
+require_once('outside/config.php');
 
    $db = mysqli_connect(db_server,db_username,db_password,db_database);
+
    if($db === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 
