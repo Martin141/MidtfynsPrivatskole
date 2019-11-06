@@ -1,9 +1,13 @@
 <?php
 include_once("db_con.php");
-//If no login, get OUT!
+
+if (!$_SESSION['loggedin']) {
+    header("location:index.php");
+    die("Log ind sessions required");
+}
 ?>
 <html>
-
+<?php ?>
 <head>
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 
@@ -21,7 +25,7 @@ include_once("db_con.php");
 
   <div class="container">
     <div class="row">
-
+    
       <!-- Tab 1 -->
       <div class="col-md-4">
         <h3>Nyeste lektier</h3>
@@ -81,7 +85,7 @@ include_once("db_con.php");
           $data = json_decode($json_data, true);
 
           curl_close($curl);
-
+          if($data == true){
           foreach ($data as $row) {
             echo "<a href='#' class='list-group-item list-group-item-action flex-column align-items-start'>
               <div class='d-flex w-100 justify-content-between'>
@@ -92,8 +96,8 @@ include_once("db_con.php");
               <small>" . $row['author'] . "</small>
             </a>";
           }
-
-          if($data == false){
+        }
+        else{
             echo "<a href='#' class='list-group-item list-group-item-action flex-column align-items-start'>
             <div class='d-flex w-100 justify-content-between'>
               <h5 class='mb-1'>Oops!</h5>
@@ -111,7 +115,7 @@ include_once("db_con.php");
       <div class="col-md-4">
         <ul class="list-group">
           <h3>Tools</h3>
-          <li class="list-group-item"><a href="#"><i class="fas fa-user"></i> Profil</li></a>
+          <li class="list-group-item"><a href="profile"><i class="fas fa-user"></i> Profil</li></a>
           <li class="list-group-item"><a href="#"><i class="fas fa-archive"></i> Lektier</li></a>
           <li class="list-group-item"><a href="#"><i class="fas fa-clock"></i> Skema</li></a>
           <li class="list-group-item"><a href="#"><i class="fas fa-calendar-alt"></i> Kalender</li></a>

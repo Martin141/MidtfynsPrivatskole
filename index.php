@@ -1,29 +1,24 @@
 <?php 
-//require_once("db_con.php");
-//If user is logged in, send them 
+include_once('db_con.php');
+
+if ($_SESSION['loggedin']) {
+    die("Du er allerede logged ind <br><a href='home'>Go back</a> or <a href='logout.php'>Log ud</a>");
+}
 ?>
 <html>
 
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 
-    <?php include_once("includes/include_css.html");
-    
-        
-    ?>
+    <?php include_once("includes/include_css.html");?>
     <!-- CSS for Login -->
     <link rel="stylesheet" href="libs/css/login.css">
-
 
     <!-- Icon - #Note: Change to a proper icon -->
     <link rel="icon" href="libs/img/crow-solid.png">
 
     <title>Midtfyns Privatskole - Log ind</title>
 </head>
-<header>
-    <?php include_once("includes/navbar.php");?>
-</header>
-
 
 <body>
 
@@ -54,7 +49,7 @@
                                     <div class="blue-icon text-center">
                                         <h3><i class="fas fa-crow"></i>AULO</h3>
                                     </div>
-                                    <form action="auth.php" method="post-aulo">
+                                    <form action="auth_PARENT.php" method="post-aulo">
                                         <div class="form-group mb-3">
                                             <div class="blue-icon"> <i class="fas fa-user-lock"></i> <input
                                                     id="inputEmail" type="username" name="username"
@@ -88,17 +83,17 @@
                                     <div class="blue-icon text-center">
                                         <h3><i class="fas fa-crow"></i>Forældre login + AULO</h3>
                                     </div>
-                                    <form action="auth.php" method="post-parent">
+                                    <form action="auth.php" method="post">
                                         <div class="form-group mb-3">
                                             <div class="blue-icon"> <i class="fas fa-user-lock"></i> <input
-                                                    id="inputEmail" type="username" name="username"
+                                                    id="username" type="username" name="username"
                                                     placeholder="Brugernavn" required="" autofocus=""
                                                     class="form-control rounded-pill border-0 shadow-sm px-4">
                                             </div>
                                         </div>
                                         <div class="form-group mb-3">
                                             <div class="blue-icon"> <i class="fas fa-key"></i></i><input
-                                                    id="inputPassword" type="password" name="password"
+                                                    id="pw" type="password" name="pw"
                                                     placeholder="Kodeord" required=""
                                                     class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
                                             </div>
