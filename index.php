@@ -131,7 +131,7 @@
 </html>
 <?php require_once("includes/scripts.html"); ?>
 
-<script>
+        <script>
     function changeTab(evt, loginTab) {
         // Declare all variables
         var i, tabcontent, tablinks;
