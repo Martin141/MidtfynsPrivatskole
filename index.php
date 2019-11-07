@@ -1,7 +1,8 @@
 <?php 
 include_once('db_con.php');
 
-if ($_SESSION['loggedin']) {
+if ($_SESSION['loggedin']){
+    header("Location:home.php");
     die("Du er allerede logged ind <br><a href='home'>Go back</a> or <a href='logout.php'>Log ud</a>");
 }
 ?>
@@ -83,7 +84,7 @@ if ($_SESSION['loggedin']) {
                                     <div class="blue-icon text-center">
                                         <h3><i class="fas fa-crow"></i>Forældre login + AULO</h3>
                                     </div>
-                                    <form action="auth.php" method="post">
+                                    <form action="auth_PARENT.php" method="post">
                                         <div class="form-group mb-3">
                                             <div class="blue-icon"> <i class="fas fa-user-lock"></i> <input
                                                     id="username" type="username" name="username"

@@ -1,5 +1,7 @@
 <!-- LDAP login script -->
 <?php 
+include_once('db_con.php');
+
 /**
  * Created by https://www.exchangecore.com/blog/using-ldap-active-directory-authentication-php
  */
