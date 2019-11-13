@@ -13,6 +13,7 @@
   color: #007bff;
 }
 
+
 /* Style the for the tabs */
 .tab {
   background-color: #f1f1f1;
@@ -39,8 +40,13 @@
 .tab button.active {
   background-color: #007bff;
 }
-
 /* Style the tab content */
 .tabcontent {
   display: none;
 } 
+
+.center {
+  align-content: center;
+  margin-left: 30%;
+  margin-right: 30%;
+}

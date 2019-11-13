@@ -24,3 +24,4 @@ require_once('outside/config.php');
     }
     
 }
+

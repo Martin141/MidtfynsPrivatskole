@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    
 }
 
 body{
@@ -7,5 +8,5 @@ body{
     background-image: linear-gradient(#137dd4,#9ec3d9,rgb(94, 96, 212));
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 10%;
+    margin:auto;
 }

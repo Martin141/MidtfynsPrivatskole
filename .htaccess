@@ -1,3 +1,4 @@
+Options +FollowSymLinks -MultiViews
 RewriteEngine on
 ErrorDocument 404 http://localhost/Midtfynsprivatskole/404.php
 
