@@ -11,18 +11,18 @@ session_start();
 
 //server database defines
 define('db_server','localhost');
-define('db_username','admin');
-define('db_password','12qw3e');
-define('db_database','aulo');
+define('db_username','');
+define('db_password','');
+define('db_database','');
 
 //Used for constants from database "echo "{$con($row['gear'])}";"
 $con = 'constant';
 
 //Defines
-define("_SERVER","MP");
-define("_COM","local");
-define("_LDAP_IP","192.168.1.80");
-define("_API_URL","https://localhost:8000/api/1/");
-define("_GET_NEWS","news/all");
-define("_POST_NEWS","news/create");
+define("_SERVER","");
+define("_COM","");
+define("_LDAP_IP","");
+define("_API_URL","");
+define("_GET_NEWS","");
+define("_POST_NEWS","");
 ?>
