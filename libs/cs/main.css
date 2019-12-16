@@ -1,11 +1,12 @@
 html{
     scroll-behavior: smooth;
+    
 }
 
 body{
     height: 100%;
-    background-image: linear-gradient(#137dd4,#9ec3d9,#f7fcff);
+    background-image: linear-gradient(#137dd4,#9ec3d9,rgb(94, 96, 212));
     background-size: cover;
     background-repeat: no-repeat;
-    
+    margin:auto;
 }

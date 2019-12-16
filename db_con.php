@@ -1,6 +1,5 @@
 <?php
 //Indeholder informationer til database, der gør at hjemmeside kan få forbindelse til den
-
 require_once('outside/config.php');
 
    $db = mysqli_connect(db_server,db_username,db_password,db_database);
@@ -25,3 +24,4 @@ require_once('outside/config.php');
     }
     
 }
+

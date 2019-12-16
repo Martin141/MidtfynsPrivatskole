@@ -82,6 +82,7 @@ if($_SESSION['role'] == "Elever" OR $_SESSION['role'] == "Forældre"){
                             <td>
                                 <select type="text" Name="class">
                                     <!-- <option value="all">Hele skolen</option> -->
+<<<<<<< HEAD
                                     <option value="2010">1. Klasse</option>
                                     <option value="2011">2. Klasse</option>
                                     <option value="2012">3. Klasse</option>
@@ -91,6 +92,17 @@ if($_SESSION['role'] == "Elever" OR $_SESSION['role'] == "Forældre"){
                                     <option value="2016">7. Klasse</option>
                                     <option value="2017">8. Klasse</option>
                                     <option value="2018">9. Klasse</option>
+=======
+                                    <option value="1">1. Klasse</option>
+                                    <option value="2">2. Klasse</option>
+                                    <option value="3">3. Klasse</option>
+                                    <option value="4">4. Klasse</option>
+                                    <option value="5">5. Klasse</option>
+                                    <option value="6">6. Klasse</option>
+                                    <option value="7">7. Klasse</option>
+                                    <option value="8">8. Klasse</option>
+                                    <option value="9">9. Klasse</option>
+>>>>>>> 3b5daf8bbd8a321ca9e8f1cad18145e21ab25bdb
                                 </select>
                             </td>
                         </tr>
@@ -106,12 +118,15 @@ if($_SESSION['role'] == "Elever" OR $_SESSION['role'] == "Forældre"){
                         <td><input type="date" id="start" name="date" value="" min=""
                                 max=""></td>
                         </tr>
+<<<<<<< HEAD
                         <!-- <tr>
                             <td>Afleverings filupload</td>
                             <td>    Understøtter: DOCX, PDF
                                     <input type="file" name="fileupload" accept="audio/*,video/*,image/*,pdf,docx"/>
                             </td>
                         </tr> -->
+=======
+>>>>>>> 3b5daf8bbd8a321ca9e8f1cad18145e21ab25bdb
                         <tr>
                             <td>
                                 <input type='submit' Name='Submit' value='Tilføj'>

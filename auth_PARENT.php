@@ -6,7 +6,6 @@ if ($_SESSION['loggedin'] == true){
     header("Location:home.php");
     die("Du er allerede logged ind <br><a href='home'>Go back</a> or <a href='logout.php'>Log ud</a>");
 }
-
 if ( !isset($_POST['username'], $_POST['pw']) ) {
 	// Could not get the data that should have been sent.
   echo "<meta http-equiv='refresh' content='5;URL=index.php'/>";
